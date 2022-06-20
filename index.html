@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork4</title>
+    <title>HomeWork5</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -50,7 +50,16 @@
       <section class="section service">
         <div class="container">
           <h1 class="service-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="service-button">Заказать услугу</button>
+          <button type="button" class="service-button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-modal" type="button" data-modal-close>
+                <svg class="svg-modal">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section advantages">
@@ -110,12 +119,15 @@
           <ul class="work-list">
             <li class="item">
               <img src="./images/img1.jpg" alt="Программирование" />
+              <p class="work-text">Десктопные приложения</p>
             </li>
             <li class="item">
               <img src="./images/img2.jpg" alt="Приложения" />
+              <p class="work-text">Мобильные приложения</p>
             </li>
             <li class="item">
               <img src="./images/img3.jpg" alt="Моделирование" />
+              <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -502,5 +514,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
