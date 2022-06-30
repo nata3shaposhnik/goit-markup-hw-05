@@ -315,11 +315,13 @@ img {
 }
 
 .work-list .item {
-  position: relative;
-
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.card-work {
+  position: relative;
 }
 
 .work-text {
